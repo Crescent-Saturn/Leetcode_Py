@@ -2,7 +2,7 @@ def twoMult(array, product):
     dict = {}
     for i in range(len(array)):
         x = array[i]
-        if product / x in dict:
+        if product // x in dict:
             return (dict[product // x] + 1, i + 1)
         dict[x] = i
 
